@@ -1,25 +1,56 @@
-#include <iostream>
-
+#include<iostream>
 using namespace std;
 
-int main (){
+int main() {
+    // int arr[] = {5, 3, 1, 4};
+    // int n = 4;
 
-    int arr[6] = { 64, 25, 12, 22, 11, 10};
+    // for(int i = 0; i < n-1; i++) {
+    //     int minIndex = i;
 
-    for (int i= 0; i<5; i++ ){
+    //     for(int j = i+1; j < n; j++) {
+    //         if(arr[j] < arr[minIndex]) {
+    //             minIndex = j;
+    //         }
+    //     }
 
-        int index = i ; 
+    //     swap(arr[i], arr[minIndex]);
+    // }
 
-        for (int j = i+1; i<6; j++){
+    // for(int i = 0; i < n; i++) {
+    //     cout << arr[i] << " ";
+    // }
 
-            if(arr[j]<arr[index])
-            index = j;
-        }
+int n;
 
-        swap (arr[i], arr[index]);
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int arr[n];
+
+    cout << "Enter elements:\n";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
     }
 
-    for (int i = 0; i<6; i++){
+    // Selection Sort (Descending)
+    for(int i = 0; i < n-1; i++) {
+        int maxIndex = i;
+
+        for(int j = i+1; j < n; j++) {
+            if(arr[j] > arr[maxIndex]) {
+                maxIndex = j;
+            }
+        }
+
+        // swap
+        swap(arr[i], arr[maxIndex]);7294
+    }
+
+    cout << "Sorted array (Descending): ";
+    for(int i = 0; i < n; i++) {
         cout << arr[i] << " ";
-    }; 
-};
+    }
+
+    return 0;
+}
