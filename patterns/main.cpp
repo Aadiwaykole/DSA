@@ -20,5 +20,27 @@ int main(){
     //     cout<< endl; 
     // }
 
+    // for(i=n; i>0; i--){
+    //     for (j=0; j<i; j++){
+    //         cout<< "* ";
+    //     }
+    //     cout<< endl; 
+    // }
+
+    for(i=1; i<=n; i++){
+
+        //space
+        for(j=1; j<=n-i; j++){
+            cout<< " ";
+        }
+        //star
+
+        for(j=1; j<=i; j++){
+            cout<<"* ";
+        }
+        cout<<endl; 
+    }
+
+
 
 }
