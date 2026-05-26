@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+//function printcol
+void printcol(int arr[][4], int row, int c ol  )
+
 int main(){
 
     //create 2 d array 
@@ -13,5 +16,8 @@ int main(){
 
             cout << arr[row][col]<<" ";
         }
-    }
+    };
+
+    //print all the value in array col wise, function call
+    printcol(arr, 3, 4 );
 }
