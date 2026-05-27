@@ -10,16 +10,46 @@ int main(){
     int ans[3][4];
 
     //add 2 matrix
-    for(int row =0 ; row<3; row++)
-    for(int col= 0; col<4; col++)
-    {
-        ans[row][col]= arr[row][col]+arr2[row][col];
-    }
+    // for(int row =0 ; row<3; row++)
+    // for(int col= 0; col<4; col++)
+    // {
+    //     ans[row][col]= arr[row][col]+arr2[row][col];
+    // }
 
 
-    for(int row =0 ; row<3; row++)
-    for(int col= 0; col<4; col++){
-        cout<< ans [row][col]<< " ";
+    // for(int row =0 ; row<3; row++)
+    // for(int col= 0; col<4; col++){
+    //     cout<< ans [row][col]<< " ";
+    // }
+
+
+    //substraction of 2 matrix 
+
+    int arr4 [3][4]= {5,67,4,3,5,6,7,5,3,5,4,6};
+
+    int arr3 [3][4];
+
+    int ans2 [3] [4];
+
+    cout <<"enter the value of 2d array";
+
+    for(int i =0; i<3; i++){
+        for(int j =0; j<4; j++){
+            cin>> arr3[i][j];
+        }
     }
+
+        for(int i =0; i<3; i++){
+        for(int j =0; j<4; j++){
+            ans2 [i][j] = arr4[i][j]-arr3[i][j];
+        }
+    }
+
+        for(int i =0; i<3; i++){
+        for(int j =0; j<4; j++){
+            cout<< ans2 [i][j] <<" ";
+        }
+    }
+
 
 }
