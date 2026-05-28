@@ -29,7 +29,8 @@ int main(){
 
     int arr3 [3][4];
 
-    int ans2 [3] [4];
+    int ans2 [3] [4]; //ans gives you 
+    
 
     cout <<"enter the value of 2d array";
 
@@ -51,5 +52,5 @@ int main(){
         }
     }
 
-
+    
 }
