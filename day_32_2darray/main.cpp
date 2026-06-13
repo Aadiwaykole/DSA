@@ -35,17 +35,20 @@ int main(){
     // cin>>n>>m ; 
     // vector<vector<int>>matrix(n,vector<int>(m,1));
 
-    
-    // for(int i =0; i<3; i++){
-    //     for( int j=0; j<4; j++ ){
+    vector< vector<int> >matrix (3,vector<int>(4,1));
 
-    //         cout<<matrix[i][j]<<" ";
+    for(int i =0; i<3; i++){
+        for( int j=0; j<4; j++ ){
 
-    //     }
+            cout<<matrix[i][j]<<" ";
+
+        }
         
 
-    // }
-    // cout<< endl;
+    }
+    cout<< endl;
+    cout<< "rows = "<< matrix.size();
+    cout<<"column= "<< matrix[0].size();
 
 
 
@@ -74,4 +77,4 @@ int main(){
     int arr [3][4]= {3,45,6,7,3,456,7,8,6,4,2,5};
 
      wave(arr, 3,4);
-}
+}   
